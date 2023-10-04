@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  #imgr{
+    background-image: url('images.jpeg');
+    background-size: 100% 80%;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height:7vh;
+    position: relative;
+
+    /* width: 100%; Make the header take the full width of its parent */
+    /* height: auto; */
+     /* Set a specific height for the header (adjust as needed) */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    /* background-position: center center; */
+
+  }
+/*   
+  .contain {
+    padding: 10px 10%;
+  } */
+  
+  /* nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } */
+  nav {
+    position: absolute; /* Add this line */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    z-index: 1; /* Add this line */
+  }
+  .logo {
+    width: 200px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  nav ul li a::after {
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: #015a1a;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
